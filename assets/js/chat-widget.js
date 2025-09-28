@@ -1,5 +1,4 @@
 jQuery(document).ready(function($){
-
     const $bubble = $('#growthnow-bubble');
     const $widget = $('#growthnow-chat-widget');
     const $body = $('#growthnow-chat-body');
@@ -15,7 +14,7 @@ jQuery(document).ready(function($){
     function appendMessage(msg, isUser){
         const msgClass = isUser ? 'user-msg' : 'ai-msg';
         $body.append(`<div class="${msgClass}">${msg}</div>`);
-        $body.scrollTop($body[0].scrollHeight);
+        $body.stop().animate({ scrollTop: $body[0].scrollHeight }, 300);
     }
 
     // Auto-resize textarea

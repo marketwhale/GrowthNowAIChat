@@ -2,7 +2,7 @@
 /**
  * Plugin Name: GrowthNow
  * Description: Full-featured AI chat widget for WooCommerce with Gemini API and product suggestions.
- * Version: 2.2
+ * Version: 2.3
  * Author: Your Name
  */
 
